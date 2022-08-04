@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Books & More. Best Offers!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background: linear-gradient(to right bottom, rgb(248, 231, 231), rgb(164, 158, 158));
+            height: 82vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 7mm;
+        }
+        .box{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background: white;
+            height: 60vh;
+            width: 50vh;
+        }
+        
+        .box input{
+            margin-left: 9mm;
+            width: 80%;
+            height: 1cm;
+            border: 1px solid black;
+            padding-left: 5px;
+
+        }
+        .login{
+            margin-left: 9mm;
+            width: 80%;
+            height:1cm;
+            background-color: aquamarine;
+            border: none;
+
+        }
+        .login:hover{
+            background: aqua; 
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        .username{
+            border: 2px solid black;
+        }
+        hr{
+            height: 0.1mm;
+            background-color: black;
+        }
+        
+        .ref a{
+            color: var(--main-bg-color);
+            text-decoration: none;
+        }
+        .Create{
+            margin-left: 30%;
+            width: 40%;
+            height: 1.2cm;
+            background-color: rgb(63, 211, 63);
+            border-radius: 2mm;
+            border: none;
+        }
+        .Create:hover{
+            background-color: rgb(41, 185, 41);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="title">
+                <strong>Book Zone</strong>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" placeholder="Search Here">
+                    <button class="btn">search</button>
+                </div>
+                <div class="lgin">
+                    <button onclick="window.location.href='login_Page.html'">login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <div class="container">
+        <div class="box"><br>
+            <h1>
+                Book Store
+            </h1><br>
+            <hr width="80%" style="margin-left: 10%;">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="username" placeholder="username, phone number or email"><br><br>
+            <input type="text" class="username" placeholder="Password"><br><br>
+
+
+            <button class="login" onclick="alert('Enter valid username and Password')" >
+                login
+            </button>
+            <br>
+
+            <div class="ref">
+            
+            <a href="#" style="margin-left: 30%;">Forgotten password?</a>
+            <br><br>
+            <hr width="80%" style="margin-left: 10%;">
+            <br>
+
+            <div>
+                <button class="Create"  onclick="window.location.href='sign_up.html'">Create New Account</button>
+            </div>
+
+        </div>
+        
+    </div>
+</main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com </p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

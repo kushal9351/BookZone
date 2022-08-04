@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Shopping Site for Books & More. Best Offers!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <style>
+            body {
+                background: linear-gradient(to right bottom, rgb(248, 231, 231), rgb(164, 158, 158));
+            }
+            .signup-box {
+                width: 360px;
+                height: 620px;
+                margin: auto;
+                background-color: white;
+                border-radius: 3px;
+            }
+            h1 {
+                text-align: center;
+                padding-top: 15px;
+            }
+            h4 {
+                text-align: center;
+            }
+            form {
+                width: 300px;
+                margin-left: 20px;
+            }
+            form label {
+                display: flex;
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            form input {
+                width: 100%;
+                padding: 7px;
+                border: none;
+                border: 1px solid gray;
+                border-radius: 6px;
+                outline: none;
+            }
+            input[type="button"] {
+                width: 320px;
+                height: 35px;
+                margin-top: 20px;
+                border: none;
+                background-color: #49c1a2;
+                color: white;
+                font-size: 18px;
+            }
+            p {
+                text-align: center;
+                padding-top: 20px;
+                    font-size: 15px;
+            }
+            .para-2 {
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                margin-top: -10px;
+            }
+            .para-2 a {
+                color: black;
+            }
+        </style>
+    </head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="title">
+                <strong>Book Zone</strong>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" placeholder="Search Here">
+                    <button class="btn">search</button>
+                </div>
+                <div class="lgin">
+                    <button onclick="window.location.href='login_Page.html'">login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="signup-box">
+            <h1>Sign Up</h1><br>
+            <h4>It's free and only takes a minute</h4><br>
+            <form>
+            <label>First Name</label>
+            <input type="text" placeholder="" />
+            <label>Last Name</label>
+            <input type="text" placeholder="" />
+            <label>Email</label>
+            <input type="email" placeholder="" />
+            <label>Password</label>
+            <input type="password" placeholder="" />
+            <label>Confirm Password</label>
+            <input type="password" placeholder="" />
+            <input type="button" value="Submit" />
+            </form>
+        <p>
+          By clicking the Sign Up button,you agree to our <br />
+          <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+        </p>
+      </div>
+      <p class="para-2">
+        Already have an account? <a href="login_page.html">Login here</a></p>
+    </div>
+</main>
+<footer class="flex-all-center">
+    <p>Copyright &copy; MyCart.com </p>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
